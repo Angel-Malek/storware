@@ -11,12 +11,8 @@ public class App {
         return "Hello World!";
 
 //        InputList inputList = new InputList();
-//
 //      //  Stream<String>   = Files.lines(Paths.get("file.txt"));
-//
 //        inputList.equals(Files.lines(Path.of("file.txt")));
-
-
 
     }
 
@@ -26,6 +22,7 @@ public class App {
 
     public static void main(String[] args) throws IOException {
         new ObjectService().prepareData();
-        new ObjectMapper();
+        ObjectMapper mapper = new ObjectMapper();
+
     }
 }

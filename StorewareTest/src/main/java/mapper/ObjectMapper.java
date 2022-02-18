@@ -13,12 +13,12 @@ public class ObjectMapper {
     private final static String MULTIPLY = "multiply";
     private final static String DIVIDE = "divide";
 
-
+    public ObjectMapper() {
+    }
 
     public static List<ObjectDTO> createObjectDto(List<Calculation> calculations) {
 
         List<ObjectDTO> objectDTOS = new ArrayList<>();
-
 
         for (Calculation calculation : calculations) {
             ObjectDTO objectDTO = new ObjectDTO();
@@ -41,7 +41,7 @@ public class ObjectMapper {
         return result;
     }
 
-    private static Double getFinalSum(List<Calculation> calculations) {
+    public static Double getFinalSum(List<Calculation> calculations) {
         Double result = getStartingNumber(calculations);
         for (Calculation calculation : calculations) {
             if (calculation.getFunction().equals(ADD)) {
