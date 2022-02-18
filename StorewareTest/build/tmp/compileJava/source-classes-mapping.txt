@@ -1,0 +1,16 @@
+Output.java
+ Output
+model/InputList.java
+ model.InputList
+Greeter.java
+ Greeter
+model/Calculation.java
+ model.Calculation
+dto/ObjectDTO.java
+ dto.ObjectDTO
+service/ObjectService.java
+ service.ObjectService
+App.java
+ App
+mapper/ObjectMapper.java
+ mapper.ObjectMapper
